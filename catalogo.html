@@ -202,7 +202,7 @@
             </div>
             <div class="flex items-center gap-6">
                 <a href="tel:+525512345678" class="hover:text-brand-blue transition flex items-center gap-2 font-bold"><i data-lucide="phone" class="w-4 h-4"></i> +52 55 1234 5678</a>
-                <button onclick="mostrarVistaPrincipalYScroll('contacto')" class="hover:text-brand-blue transition font-bold">Solicitar Cotización</button>
+                <button onclick="window.location.href='index.html#contacto'" class="hover:text-brand-blue transition font-bold">Solicitar Cotización</button>
             </div>
         </div>
     </div>
@@ -213,7 +213,7 @@
             <div class="flex justify-between items-center h-20 md:h-24">
                 
                 <!-- Logo -->
-                <div class="flex-shrink-0 cursor-pointer flex items-center" onclick="mostrarVistaPrincipal()">
+                <div class="flex-shrink-0 cursor-pointer flex items-center" onclick="window.location.href='index.html'">
                     <img src="logoheaderupe.png" alt="Logo UPE" class="h-10 md:h-14 object-contain">
                 </div>
 
@@ -227,10 +227,10 @@
 
                 <!-- Menú de Escritorio & Contacto -->
                 <div class="hidden md:flex items-center space-x-8 h-full">
-                    <button onclick="mostrarVistaPrincipalYScroll('inicio')" class="nav-link">Inicio</button>
+                    <button onclick="window.location.href='index.html'" class="nav-link">Inicio</button>
                     
                     <div class="relative nav-item-group flex items-center h-full">
-                        <button onclick="window.location.href='catalogo.html?cat=todos'" class="nav-link flex items-center gap-1 cursor-pointer">
+                        <button onclick="filtrarCatalogo('todos')" class="nav-link flex items-center gap-1 cursor-pointer">
                             Productos <i data-lucide="chevron-down" class="w-4 h-4"></i>
                         </button>
                         
@@ -239,10 +239,10 @@
                             <div class="w-1/2 bg-gray-50 p-6 border-r border-gray-100">
                                 <h4 class="font-extrabold text-brand-navy mb-4 text-sm uppercase tracking-wider">Por Categoría</h4>
                                 <ul class="space-y-3">
-                                    <li><button onclick="window.location.href='catalogo.html?cat=industrial'" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Industrial / Operativo</button></li>
-                                    <li><button onclick="window.location.href='catalogo.html?cat=corporativo'" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Corporativo / Ejecutivo</button></li>
-                                    <li><button onclick="window.location.href='catalogo.html?cat=seguridad'" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Alta Visibilidad / Seguridad</button></li>
-                                    <li><button onclick="window.location.href='catalogo.html?cat=casual'" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Casual / Ventas</button></li>
+                                    <li><button onclick="filtrarCatalogo('industrial')" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Industrial / Operativo</button></li>
+                                    <li><button onclick="filtrarCatalogo('corporativo')" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Corporativo / Ejecutivo</button></li>
+                                    <li><button onclick="filtrarCatalogo('seguridad')" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Alta Visibilidad / Seguridad</button></li>
+                                    <li><button onclick="filtrarCatalogo('casual')" class="text-sm font-semibold text-gray-600 hover:text-brand-blue transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-brand-blue"></i> Casual / Ventas</button></li>
                                 </ul>
                             </div>
                             <div class="w-1/2 p-6 flex flex-col pt-8 bg-white">
@@ -251,14 +251,14 @@
                                     <h4 class="font-extrabold text-brand-blue mb-1 text-sm uppercase flex items-center gap-2"><i data-lucide="flame" class="w-4 h-4"></i> Línea FR Antiflama</h4>
                                     <p class="text-xs text-gray-500 font-medium">Protección especializada normada (NFPA 2112)</p>
                                 </a>
-                                <button onclick="window.location.href='catalogo.html?cat=todos'" class="mt-auto block w-full text-center bg-brand-navy text-white text-xs font-bold uppercase tracking-widest py-3 btn-square hover:bg-brand-blue transition-colors">
+                                <button onclick="filtrarCatalogo('todos')" class="mt-auto block w-full text-center bg-brand-navy text-white text-xs font-bold uppercase tracking-widest py-3 btn-square hover:bg-brand-blue transition-colors">
                                     Ver Todo El Catálogo
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <button onclick="mostrarVistaPrincipalYScroll('servicios')" class="nav-link">Servicios</button>
+                    <button onclick="window.location.href='index.html#servicios'" class="nav-link">Servicios</button>
                     
                     <a href="https://flowmx.github.io/upefr/" class="text-[#c1272d] font-bold text-sm uppercase tracking-wide hover:text-red-800 transition-colors border-2 border-[#c1272d] px-4 py-2 hover:bg-red-50 flex items-center gap-2" style="border-radius:2px;">
                         <i data-lucide="flame" class="w-4 h-4 fill-current"></i> FR Antiflama
@@ -290,22 +290,22 @@
         <!-- Menú Móvil Desplegable -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl max-h-[85vh] overflow-y-auto z-50">
             <div class="px-6 py-4 space-y-1 flex flex-col">
-                <button onclick="manejarMenuMovil('inicio')" class="text-left py-4 text-sm font-bold uppercase tracking-wider text-brand-navy border-b border-gray-100 hover:text-brand-blue">Inicio</button>
+                <button onclick="window.location.href='index.html'" class="text-left py-4 text-sm font-bold uppercase tracking-wider text-brand-navy border-b border-gray-100 hover:text-brand-blue">Inicio</button>
                 
                 <div class="py-4 border-b border-gray-100">
                     <span class="block text-sm font-extrabold text-gray-400 uppercase tracking-widest mb-3">Productos</span>
-                    <button onclick="window.location.href='catalogo.html?cat=todos'" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Ver Todo</button>
-                    <button onclick="window.location.href='catalogo.html?cat=industrial'" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Industrial</button>
-                    <button onclick="window.location.href='catalogo.html?cat=corporativo'" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Corporativo</button>
-                    <button onclick="window.location.href='catalogo.html?cat=seguridad'" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Alta Visibilidad</button>
+                    <button onclick="filtrarCatalogo('todos'); document.getElementById('mobile-menu').classList.add('hidden');" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Ver Todo</button>
+                    <button onclick="filtrarCatalogo('industrial'); document.getElementById('mobile-menu').classList.add('hidden');" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Industrial</button>
+                    <button onclick="filtrarCatalogo('corporativo'); document.getElementById('mobile-menu').classList.add('hidden');" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Corporativo</button>
+                    <button onclick="filtrarCatalogo('seguridad'); document.getElementById('mobile-menu').classList.add('hidden');" class="w-full text-left py-2 text-sm font-semibold text-gray-700 hover:text-brand-blue flex items-center gap-2"><i data-lucide="minus" class="w-3 h-3"></i> Alta Visibilidad</button>
                 </div>
 
                 <a href="https://flowmx.github.io/upefr/" class="block w-full text-left py-4 text-sm font-bold uppercase tracking-wider text-[#c1272d] border-b border-gray-100 flex items-center gap-2">
                     <i data-lucide="flame" class="w-4 h-4 fill-current"></i> Info FR Antiflama
                 </a>
                 
-                <button onclick="manejarMenuMovil('servicios')" class="text-left py-4 text-sm font-bold uppercase tracking-wider text-brand-navy border-b border-gray-100 hover:text-brand-blue">Servicios</button>
-                <button onclick="manejarMenuMovil('contacto')" class="text-left py-4 text-sm font-bold uppercase tracking-wider text-brand-navy border-b border-gray-100 hover:text-brand-blue">Contacto</button>
+                <button onclick="window.location.href='index.html#servicios'" class="text-left py-4 text-sm font-bold uppercase tracking-wider text-brand-navy border-b border-gray-100 hover:text-brand-blue">Servicios</button>
+                <button onclick="window.location.href='index.html#contacto'" class="text-left py-4 text-sm font-bold uppercase tracking-wider text-brand-navy border-b border-gray-100 hover:text-brand-blue">Contacto</button>
                 <button onclick="abrirLoginAdmin(event)" class="text-left py-4 text-sm font-bold uppercase tracking-wider text-gray-500 hover:text-brand-blue">Log In Admin</button>
             </div>
         </div>
@@ -316,231 +316,65 @@
     <!-- ========================================== -->
     <div id="view-main" class="fade-in">
 
-        <!-- Sección Inicio (Hero con Slider eShop style) -->
-        <section id="inicio" class="relative min-h-[85vh] flex items-center z-0 pt-0">
-            <!-- Fondos -->
-            <div id="hero-slider"></div>
-            <div id="hero-overlay"></div>
-
-            <div class="max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center">
-                <!-- Text Box (Left Aligned on Desktop) -->
-                <div class="lg:w-1/2 bg-white/5 backdrop-blur-sm p-8 md:p-12 lg:p-16 border-l-4 border-brand-blue text-left mt-10 md:mt-0">
-                    <span class="text-brand-blue font-extrabold tracking-widest uppercase text-xs mb-4 block inline-flex items-center gap-2 bg-brand-navy/80 px-4 py-1 btn-square text-white">
-                        <i data-lucide="check-circle-2" class="w-3 h-3"></i> Equipamiento Profesional
-                    </span>
-                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-[1.1] uppercase tracking-tight">
-                        Uniformamos <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-blue-200">Tu Industria</span>
-                    </h1>
-                    <p class="text-lg md:text-xl text-gray-200 mb-10 font-medium leading-relaxed max-w-lg">
-                        Prendas operativas, corporativas y equipo de protección con los más altos estándares de calidad y durabilidad.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="window.location.href='catalogo.html'" class="bg-brand-blue text-white px-8 py-4 font-extrabold text-sm tracking-widest uppercase hover:bg-blue-600 transition-colors btn-square">
-                            Ver Catálogo
-                        </button>
-                        <a href="https://flowmx.github.io/upefr/" class="bg-transparent border-2 border-white text-white px-8 py-4 font-extrabold text-sm tracking-widest uppercase hover:bg-white hover:text-brand-navy transition-colors btn-square text-center">
-                            Ver Línea FR
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tipos de Uniformes -->
-        <section id="lineas" class="py-20 bg-white border-t border-gray-100">
-            <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-4 border-b border-gray-200 pb-4">
-                    <div>
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy tracking-tight uppercase">Líneas de Trabajo</h2>
-                        <p class="text-gray-500 font-medium mt-2">Encuentra el equipo ideal para tu sector</p>
-                    </div>
-                    <button onclick="window.location.href='catalogo.html?cat=todos'" class="font-bold text-sm uppercase tracking-widest text-brand-blue hover:text-brand-navy transition-colors flex items-center gap-2">
-                        Ver todas las líneas <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
+        <!-- Catálogo Grid -->
+        <section id="catalogo" class="py-20 bg-white min-h-screen">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-navy mb-4" id="titulo-catalogo">Catálogo
+                        Completo</h2>
+                    <div class="w-24 h-1 bg-brand-blue mb-6"></div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div onclick="window.location.href='catalogo.html?cat=industrial'"
-                        class="cursor-pointer group relative overflow-hidden bg-white border border-gray-200 aspect-[3/4] flex flex-col">
-                        <!-- ✏️ [EDITAR IMAGEN CATEGORÍA INDUSTRIAL] -->
-                        <div class="h-4/5 overflow-hidden w-full"><img src="Industrial_img.jpg"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                alt="Industrial"></div>
-                        <div class="h-1/5 bg-gray-50 flex items-center justify-between p-4 group-hover:bg-brand-light transition-colors border-t border-gray-200">
-                            <h3 class="text-lg font-extrabold text-brand-navy uppercase tracking-wider">Industrial</h3>
-                            <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-brand-blue transition-colors"></i>
-                        </div>
-                    </div>
-                    
-                    <div onclick="window.location.href='catalogo.html?cat=corporativo'"
-                        class="cursor-pointer group relative overflow-hidden bg-white border border-gray-200 aspect-[3/4] flex flex-col">
-                        <!-- ✏️ [EDITAR IMAGEN CATEGORÍA CORPORATIVO] -->
-                        <div class="h-4/5 overflow-hidden w-full"><img src="Coorporativo_img.jpg"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                alt="Corporativo"></div>
-                        <div class="h-1/5 bg-gray-50 flex items-center justify-between p-4 group-hover:bg-brand-light transition-colors border-t border-gray-200">
-                            <h3 class="text-lg font-extrabold text-brand-navy uppercase tracking-wider">Corporativo</h3>
-                            <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-brand-blue transition-colors"></i>
-                        </div>
-                    </div>
-                    
-                    <div onclick="window.location.href='catalogo.html?cat=seguridad'"
-                        class="cursor-pointer group relative overflow-hidden bg-white border border-gray-200 aspect-[3/4] flex flex-col">
-                        <!-- ✏️ [EDITAR IMAGEN CATEGORÍA SEGURIDAD] -->
-                        <div class="h-4/5 overflow-hidden w-full"><img src="Seguridad_img.jpg"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                alt="Seguridad"></div>
-                        <div class="h-1/5 bg-gray-50 flex items-center justify-between p-4 group-hover:bg-brand-light transition-colors border-t border-gray-200">
-                            <h3 class="text-lg font-extrabold text-brand-navy uppercase tracking-wider">Seguridad</h3>
-                            <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-brand-blue transition-colors"></i>
-                        </div>
-                    </div>
-                    
-                    <!-- ✏️ [EDITAR ENLACE TARJETA ANTIFLAMA] -->
-                    <a href="https://flowmx.github.io/upefr/"
-                        class="block cursor-pointer group relative overflow-hidden bg-white border border-gray-200 aspect-[3/4] flex flex-col border-b-4 border-b-[#c1272d]">
-                        <!-- ✏️ [EDITAR IMAGEN CATEGORÍA ANTIFLAMA] -->
-                        <div class="h-4/5 overflow-hidden w-full relative">
-                            <div class="absolute top-3 left-3 bg-[#c1272d] text-white text-xs font-bold uppercase px-2 py-1 z-10 flex items-center gap-1">
-                                <i data-lucide="flame" class="w-3 h-3 fill-current"></i> NFPA 2112
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Sidebar -->
+                    <aside class="w-full lg:w-1/4 space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hidden md:block">
+                            <div class="relative">
+                                <input type="text" id="buscador" onkeyup="buscarProductos()"
+                                    placeholder="Buscar prenda..."
+                                    class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-all font-medium text-sm btn-square">
+                                <i data-lucide="search" class="w-5 h-5 text-gray-400 absolute left-3 top-3.5"></i>
                             </div>
-                            <img src="Antiflama_img.jpg"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90"
-                                alt="Antiflama">
                         </div>
-                        <div class="h-1/5 bg-red-50 flex items-center justify-between p-4 group-hover:bg-red-100 transition-colors border-t border-gray-200">
-                            <h3 class="text-lg font-extrabold text-[#c1272d] uppercase tracking-wider">Antiflama (FR)</h3>
-                            <i data-lucide="external-link" class="w-5 h-5 text-[#c1272d] opacity-50 group-hover:opacity-100 transition-opacity"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
 
-        <!-- SECCIÓN 1: SERVICIOS (Value Props) -->
-        <section id="servicios" class="py-16 bg-brand-navy text-white">
-            <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-slate-700">
-                    <div class="p-6 text-center flex flex-col items-center">
-                        <i data-lucide="pen-tool" class="w-10 h-10 text-brand-blue mb-4"></i>
-                        <h3 class="text-lg font-extrabold uppercase tracking-widest mb-2">Bordado y Serigrafía</h3>
-                        <p class="text-sm text-gray-400 font-medium">Personalización premium para destacar tu marca corporativa.</p>
-                    </div>
-                    <div class="p-6 text-center flex flex-col items-center">
-                        <i data-lucide="truck" class="w-10 h-10 text-brand-blue mb-4"></i>
-                        <h3 class="text-lg font-extrabold uppercase tracking-widest mb-2">Envíos Nacionales</h3>
-                        <p class="text-sm text-gray-400 font-medium">Cobertura a toda la República Mexicana. Puntualidad garantizada.</p>
-                    </div>
-                    <div class="p-6 text-center flex flex-col items-center">
-                        <i data-lucide="users" class="w-10 h-10 text-brand-blue mb-4"></i>
-                        <h3 class="text-lg font-extrabold uppercase tracking-widest mb-2">Asesoría B2B</h3>
-                        <p class="text-sm text-gray-400 font-medium">Levantamiento de tallas y atención experta para tu empresa.</p>
-                    </div>
-                    <div class="p-6 text-center flex flex-col items-center">
-                        <i data-lucide="scissors" class="w-10 h-10 text-brand-blue mb-4"></i>
-                        <h3 class="text-lg font-extrabold uppercase tracking-widest mb-2">Diseño Especializado</h3>
-                        <p class="text-sm text-gray-400 font-medium">Ajustes a medida según los requerimientos de seguridad y operación.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                            <h3 class="font-bold text-brand-navy mb-4">Categorías</h3>
+                            <div class="space-y-1 flex flex-col" id="contenedor-filtros">
+                                <button onclick="filtrarCatalogo('todos')"
+                                    class="filtro-btn text-left px-4 py-2.5 rounded-xl font-medium text-brand-blue bg-brand-light transition-colors text-sm"
+                                    data-cat="todos">Todos los productos</button>
+                                <button onclick="filtrarCatalogo('industrial')"
+                                    class="filtro-btn text-left px-4 py-2.5 rounded-xl font-medium text-gray-600 hover:bg-gray-100 transition-colors text-sm"
+                                    data-cat="industrial">Industrial / Operativo</button>
+                                <button onclick="filtrarCatalogo('corporativo')"
+                                    class="filtro-btn text-left px-4 py-2.5 rounded-xl font-medium text-gray-600 hover:bg-gray-100 transition-colors text-sm"
+                                    data-cat="corporativo">Corporativo / Ejecutivo</button>
+                                <button onclick="filtrarCatalogo('seguridad')"
+                                    class="filtro-btn text-left px-4 py-2.5 rounded-xl font-medium text-gray-600 hover:bg-gray-100 transition-colors text-sm"
+                                    data-cat="seguridad">Alta Visibilidad</button>
+                                <button onclick="filtrarCatalogo('casual')"
+                                    class="filtro-btn text-left px-4 py-2.5 rounded-xl font-medium text-gray-600 hover:bg-gray-100 transition-colors text-sm"
+                                    data-cat="casual">Casual / Ventas</button>
+                            </div>
+                        </div>
+                    </aside>
 
-        <!-- SECCIÓN 2: BENEFICIOS -->
-        <section id="beneficios" class="py-20 bg-gray-50 border-t border-b border-gray-200">
-            <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-gray-200 pb-4">
-                    <div>
-                        <h2 class="text-2xl md:text-3xl font-extrabold text-brand-navy tracking-tight uppercase">El Estándar UPE</h2>
-                        <p class="text-gray-500 font-medium mt-2">Diferenciadores clave de nuestros uniformes</p>
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-white p-8 border border-gray-200 hover:border-brand-blue transition-colors relative overflow-hidden group btn-square cursor-default">
-                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                            <i data-lucide="shield" class="w-24 h-24 text-brand-navy"></i>
+                    <!-- Productos Area -->
+                    <main class="w-full lg:w-3/4">
+                        <div class="mb-6 text-gray-500 font-medium text-sm" id="resultados-contador">
+                            Mostrando catálogo
                         </div>
-                        <i data-lucide="shield" class="w-8 h-8 text-brand-blue mb-6"></i>
-                        <h3 class="text-lg font-extrabold text-brand-navy mb-3 uppercase tracking-wider">Larga Vida Útil</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Costuras reforzadas y telas de máxima resistencia, desarrolladas para soportar lavados industriales constantes y trabajo pesado.</p>
-                    </div>
-                    
-                    <div class="bg-white p-8 border border-gray-200 hover:border-brand-blue transition-colors relative overflow-hidden group btn-square cursor-default">
-                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                            <i data-lucide="shield-check" class="w-24 h-24 text-brand-navy"></i>
+                        <div id="grid-productos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Inyectado por JS -->
                         </div>
-                        <i data-lucide="shield-check" class="w-8 h-8 text-brand-blue mb-6"></i>
-                        <h3 class="text-lg font-extrabold text-brand-navy mb-3 uppercase tracking-wider">Cumplimiento Normativo</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Líneas especializadas y FR que exceden normativas internacionales (NFPA 2112, 70E, ANSI) protegiendo el activo más valioso.</p>
-                    </div>
-                    
-                    <div class="bg-white p-8 border border-gray-200 hover:border-brand-blue transition-colors relative overflow-hidden group btn-square cursor-default">
-                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                            <i data-lucide="smile" class="w-24 h-24 text-brand-navy"></i>
+                        <div id="sin-resultados"
+                            class="hidden text-center py-20 bg-gray-50 rounded-2xl border border-gray-100">
+                            <i data-lucide="package-x" class="w-16 h-16 text-gray-300 mx-auto mb-4"></i>
+                            <h3 class="text-xl font-bold text-brand-navy">No encontramos prendas</h3>
+                            <button onclick="filtrarCatalogo('todos')"
+                                class="mt-4 text-brand-blue font-bold hover:underline">Ver todo</button>
                         </div>
-                        <i data-lucide="smile" class="w-8 h-8 text-brand-blue mb-6"></i>
-                        <h3 class="text-lg font-extrabold text-brand-navy mb-3 uppercase tracking-wider">Confort Absoluto</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Fabricación ergonómica y textiles de alta transpirabilidad para maximizar el bienestar físico durante largas y exigentes jornadas.</p>
-                    </div>
-                    
-                    <div class="bg-white p-8 border border-gray-200 hover:border-brand-blue transition-colors relative overflow-hidden group btn-square cursor-default">
-                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                            <i data-lucide="briefcase" class="w-24 h-24 text-brand-navy"></i>
-                        </div>
-                        <i data-lucide="briefcase" class="w-8 h-8 text-brand-blue mb-6"></i>
-                        <h3 class="text-lg font-extrabold text-brand-navy mb-3 uppercase tracking-wider">Imagen Impecable</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Cortes modernos probados y retención de color superior que aseguran que su equipo transmita liderazgo y confianza en cada interacción.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Antiflama (Split Banner Promocional) -->
-        <section id="antiflama-info" class="w-full">
-            <div class="flex flex-col lg:flex-row min-h-[500px]">
-                <!-- Panel Imagen -->
-                <div class="lg:w-1/2 relative min-h-[300px] lg:min-h-full bg-black">
-                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1200"
-                        alt="Protección Antiflama" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60">
-                    <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#c1272d]/40"></div>
-                </div>
-                
-                <!-- Panel Info -->
-                <div class="lg:w-1/2 bg-[#0a1523] text-white p-12 md:p-20 flex flex-col justify-center border-l-8 border-[#c1272d]">
-                    <div class="inline-flex items-center gap-2 text-[#c1272d] font-extrabold tracking-widest uppercase text-xs mb-6">
-                        <i data-lucide="flame" class="w-4 h-4 fill-current"></i> Innovación contra el fuego
-                    </div>
-                    <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">
-                        La Defensa Definitiva:<br/> <span class="text-[#c1272d]">Línea FR Antiflama</span>
-                    </h2>
-                    <p class="text-gray-300 text-lg mb-8 font-medium max-w-lg leading-relaxed">
-                        Prendas ignífugas de categoría mundial para enfrentar arco eléctrico y fuego repentino. La tecnología Textil FR actúa como escudo invisible salvando vidas.
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 max-w-lg">
-                        <div class="flex items-center gap-3 bg-white/5 p-3 btn-square border border-white/10">
-                            <i data-lucide="check" class="text-[#c1272d] w-5 h-5"></i>
-                            <span class="text-sm font-semibold">Regulación NFPA 2112</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-white/5 p-3 btn-square border border-white/10">
-                            <i data-lucide="check" class="text-[#c1272d] w-5 h-5"></i>
-                            <span class="text-sm font-semibold">Normativa 70E</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-white/5 p-3 btn-square border border-white/10">
-                            <i data-lucide="check" class="text-[#c1272d] w-5 h-5"></i>
-                            <span class="text-sm font-semibold">Tratamiento Vitalicio</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-white/5 p-3 btn-square border border-white/10">
-                            <i data-lucide="check" class="text-[#c1272d] w-5 h-5"></i>
-                            <span class="text-sm font-semibold">Costura Nomex®</span>
-                        </div>
-                    </div>
-                    <!-- ✏️ [EDITAR ENLACE BOTÓN INFO ANTIFLAMA] -->
-                    <div>
-                        <a href="https://flowmx.github.io/upefr/"
-                            class="inline-block bg-[#c1272d] text-white px-10 py-4 font-extrabold text-sm uppercase tracking-widest hover:bg-red-800 transition-colors btn-square">
-                            Explorar Catálogo FR
-                        </a>
-                    </div>
+                    </main>
                 </div>
             </div>
         </section>
@@ -577,100 +411,135 @@
             </div>
         </section>
 
-        <!-- Formulario Contacto General (Footer) -->
-        <section id="contacto" class="py-24 bg-white border-t border-gray-200">
-            <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
-                    <!-- Info de Contacto -->
-                    <div class="flex flex-col justify-center">
-                        <span class="text-brand-blue font-extrabold tracking-widest uppercase text-xs mb-4 block">Atención Personalizada</span>
-                        <h2 class="text-3xl md:text-5xl font-black text-brand-navy mb-6 tracking-tight uppercase">
-                            Equipa a tu <br/> Personal Hoy
-                        </h2>
-                        <div class="w-16 h-1.5 bg-brand-blue mb-8"></div>
-                        <p class="text-gray-600 text-lg md:text-xl mb-10 font-medium leading-relaxed">
-                            Atendemos pedidos corporativos y de mayoreo. Contacta a un asesor especializado integral para cotizar la mejor opción para tu giro comercial.
-                        </p>
-                        
-                        <div class="space-y-8 mb-12">
-                            <div class="flex items-start gap-5">
-                                <div class="w-12 h-12 bg-gray-50 border border-gray-200 flex items-center justify-center text-brand-blue shrink-0 btn-square">
-                                    <i data-lucide="phone-call" class="w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-500 text-sm uppercase tracking-widest mb-1">Contacto Directo</h4>
-                                    <!-- ✏️ [EDITAR TELÉFONO AQUÍ] -->
-                                    <p class="text-brand-navy text-xl font-extrabold">+52 55 1234 5678</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-5">
-                                <div class="w-12 h-12 bg-gray-50 border border-gray-200 flex items-center justify-center text-brand-blue shrink-0 btn-square">
-                                    <i data-lucide="mail" class="w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-500 text-sm uppercase tracking-widest mb-1">Correo Electrónico</h4>
-                                    <!-- ✏️ [EDITAR CORREO AQUÍ] -->
-                                    <p class="text-brand-navy text-xl font-extrabold">ventas@uniformesprofesionales.mx</p>
-                                </div>
-                            </div>
-                        </div>
+    </div> <!-- FIN VISTA PRINCIPAL -->
 
-                        <!-- ✏️ [EDITAR ENLACE WHATSAPP BOTÓN VERDE AQUÍ] -->
-                        <div>
-                            <a href="https://wa.me/525512345678?text=Hola,%20me%20gustaría%20información%20general%20sobre%20uniformes"
-                                target="_blank"
-                                class="inline-flex bg-[#25D366] text-white px-8 py-4 font-extrabold text-sm uppercase tracking-widest hover:bg-[#20b858] transition-colors items-center justify-center gap-3 btn-square w-full sm:w-auto">
-                                <i data-lucide="message-circle" class="w-5 h-5"></i>
-                                Iniciar Chat WhatsApp
-                            </a>
-                        </div>
+    <!-- ========================================== -->
+    <!-- VISTA DE PRODUCTO INDIVIDUAL               -->
+    <!-- ========================================== -->
+    <div id="view-product" class="hidden pt-28 pb-20 bg-gray-50 min-h-screen fade-in border-t border-gray-200">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Botón regresar -->
+            <button onclick="filtrarCatalogo('todos')"
+                class="flex items-center gap-2 text-brand-navy hover:text-brand-blue font-extrabold uppercase tracking-widest text-sm mb-8 transition-colors btn-square bg-white border border-gray-200 px-6 py-3 w-fit">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver al catálogo
+            </button>
+
+            <!-- Contenedor Producto -->
+            <div class="bg-white border border-gray-200 mb-12 btn-square">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Imagen Producto -->
+                    <div class="md:w-1/2 min-h-[400px] bg-white relative border-r border-gray-100 p-8 flex items-center justify-center">
+                        <img id="pd-img" src="" alt="Producto" class="max-h-[500px] object-contain w-full blend-multiply">
+                        <div id="pd-etiqueta"
+                            class="absolute top-4 left-4 text-xs font-bold px-3 py-1.5 shadow-sm uppercase tracking-widest"></div>
                     </div>
 
-                    <!-- Formulario -->
-                    <div class="bg-gray-50 p-8 md:p-12 border border-gray-200 btn-square flex flex-col justify-center">
-                        <h3 class="text-2xl font-black text-brand-navy mb-2 uppercase tracking-tight">Solicitud de Cotización</h3>
-                        <p class="text-gray-500 text-sm mb-8 font-medium">Completa los datos y te contactaremos en breve.</p>
-                        
-                        <form
-                            onsubmit="event.preventDefault(); showToast('Cotización general enviada con éxito.', 'success'); this.reset();">
-                            <div class="space-y-5">
-                                <div>
-                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Nombre Completo</label>
-                                    <input type="text"
-                                        class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-semibold"
-                                        required>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                    <div>
-                                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Empresa</label>
-                                        <input type="text"
-                                            class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-semibold"
-                                            required>
-                                    </div>
-                                    <div>
-                                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Teléfono</label>
-                                        <input type="tel"
-                                            class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-semibold">
-                                    </div>
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Requerimiento Especializado</label>
-                                    <textarea rows="4"
-                                        class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-medium resize-none"
-                                        placeholder="Indique prendas, cantidades, certificaciones requeridas..."
-                                        required></textarea>
-                                </div>
-                                <button type="submit"
-                                    class="w-full bg-brand-navy text-white font-extrabold text-sm uppercase tracking-widest py-4 hover:bg-brand-blue transition-colors btn-square mt-2">
-                                    Enviar Petición
-                                </button>
+                    <!-- Info Producto -->
+                    <div class="md:w-1/2 p-8 md:p-14 flex flex-col justify-center bg-gray-50">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span id="pd-categoria"
+                                class="text-white bg-brand-navy px-3 py-1 font-bold uppercase text-[10px] tracking-widest btn-square"></span>
+                            <span class="w-1.5 h-1.5 bg-gray-300"></span>
+                            <span id="pd-marca" class="text-gray-500 font-extrabold uppercase text-xs tracking-widest"></span>
+                        </div>
+                        <h1 id="pd-title"
+                            class="text-3xl md:text-5xl font-black text-brand-navy mb-6 leading-tight uppercase tracking-tight"></h1>
+
+                        <div class="w-20 h-1.5 bg-brand-blue mb-8"></div>
+
+                        <p id="pd-desc" class="text-gray-600 mb-10 leading-relaxed text-lg font-medium"></p>
+
+                        <!-- Detalles Extras -->
+                        <div class="grid grid-cols-2 gap-4 mb-10">
+                            <div class="bg-white p-5 border border-gray-200 btn-square">
+                                <i data-lucide="scissors" class="w-6 h-6 text-brand-blue mb-3"></i>
+                                <h4 class="font-extrabold text-xs uppercase tracking-widest text-brand-navy mb-1">Personalizable</h4>
+                                <p class="text-sm font-medium text-gray-500">Bordado o Serigrafía</p>
                             </div>
-                        </form>
+                            <div class="bg-white p-5 border border-gray-200 btn-square">
+                                <i data-lucide="ruler" class="w-6 h-6 text-brand-blue mb-3"></i>
+                                <h4 class="font-extrabold text-xs uppercase tracking-widest text-brand-navy mb-1">Tallas</h4>
+                                <p class="text-sm font-medium text-gray-500">CH, M, G, XG, XXG</p>
+                            </div>
+                        </div>
+
+                        <!-- Botón WhatsApp Directo -->
+                        <button id="btn-whatsapp-prod"
+                            class="w-full bg-brand-navy text-white font-extrabold py-5 hover:bg-brand-blue transition-colors flex items-center justify-center gap-3 text-sm uppercase tracking-widest btn-square">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.128.552 4.198 1.6 6.015L.32 23.682l5.772-1.516c1.748.956 3.708 1.464 5.75 1.464 6.645 0 12.03-5.385 12.03-12.031S18.675 0 12.03 0zm5.66 17.38c-.26.74-1.51 1.42-2.11 1.5-.56.07-1.34.22-3.81-.8-2.98-1.24-4.88-4.32-5.03-4.52-.14-.2-1.2-1.6-1.2-3.05 0-1.46.76-2.18 1.03-2.48.27-.3.59-.38.79-.38.2 0 .4.01.58.01.19 0 .46-.07.72.56.27.65.92 2.25 1 2.45.08.2.14.43.01.69-.13.26-.2.43-.4.66-.2.23-.42.5-.59.69-.19.2-.39.42-.16.82.23.4 1.02 1.69 2.19 2.73 1.51 1.34 2.77 1.76 3.17 1.95.4.19.64.16.88-.11.24-.28 1.03-1.2 1.3-1.61.27-.41.54-.34.9-.2.36.14 2.29 1.08 2.68 1.28.4.19.66.29.75.46.1.16.1.94-.16 1.68z" />
+                            </svg>
+                            Cotización Rápida
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-    </div> <!-- FIN VISTA PRINCIPAL -->
+
+            <!-- Formulario Independiente del Producto -->
+            <div class="max-w-4xl mx-auto bg-white p-8 md:p-14 border border-gray-200 btn-square">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-black text-brand-navy uppercase tracking-tight">Solicitud Detallada</h3>
+                    <p class="text-gray-500 font-medium mt-2">Cotización por volumen específico para este modelo.</p>
+                </div>
+
+                <form
+                    onsubmit="event.preventDefault(); showToast('Cotización enviada. (Demo)', 'success'); this.reset();">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Modelo Seleccionado</label>
+                            <input type="text" id="form-pd-nombre"
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-300 text-brand-navy font-bold outline-none cursor-not-allowed btn-square"
+                                readonly>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Nombre Completo</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-semibold"
+                                    required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Empresa</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-semibold"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Correo Electrónico</label>
+                                <input type="email"
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-semibold"
+                                    required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Teléfono</label>
+                                <input type="tel"
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-semibold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Volumen y Requerimientos</label>
+                            <textarea rows="4"
+                                class="w-full px-4 py-3 bg-white border border-gray-300 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all btn-square text-brand-navy font-medium resize-none"
+                                placeholder="Ej: Requiero 50 piezas, tallas variadas, bordado frontal..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-brand-navy text-white font-extrabold text-sm uppercase tracking-widest py-5 hover:bg-brand-blue transition-colors btn-square mt-2">
+                            Enviar Solicitud Formal
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div> <!-- FIN VISTA PRODUCTO -->
 
     <!-- ========================================== -->
     <!-- VISTA DE ADMINISTRACIÓN Y MODALES          -->
@@ -885,7 +754,7 @@
         <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center md:items-start text-center md:text-left mb-12 border-b border-gray-800 pb-12">
                 <!-- Logo Zone -->
-                <div class="flex flex-col items-center md:items-start cursor-pointer" onclick="mostrarVistaPrincipal()">
+                <div class="flex flex-col items-center md:items-start cursor-pointer" onclick="window.location.href='index.html'">
                     <!-- ✏️ [EDITAR LOGO FOOTER] Sube tu logo blanco y asegúrate de que el nombre coincida (por ejemplo logo_blanco_upe.png) -->
                     <img src="logo%20blanco%20upe.png" alt="Logo UPE Blanco"
                         class="h-12 object-contain opacity-90 hover:opacity-100 transition-opacity mb-4">
@@ -895,8 +764,8 @@
                 <!-- Navigation Links -->
                 <div class="flex flex-col gap-3">
                     <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-2">Empresa</h4>
-                    <button onclick="mostrarVistaPrincipalYScroll('inicio')" class="text-gray-400 hover:text-white transition-colors text-sm font-medium w-fit mx-auto md:mx-0">Inicio</button>
-                    <button onclick="window.location.href='catalogo.html'" class="text-gray-400 hover:text-white transition-colors text-sm font-medium w-fit mx-auto md:mx-0">Catálogo Completo</button>
+                    <button onclick="window.location.href='index.html'" class="text-gray-400 hover:text-white transition-colors text-sm font-medium w-fit mx-auto md:mx-0">Inicio</button>
+                    <button onclick="filtrarCatalogo('todos')" class="text-gray-400 hover:text-white transition-colors text-sm font-medium w-fit mx-auto md:mx-0">Catálogo Completo</button>
                     <a href="https://flowmx.github.io/upefr/" class="text-[#c1272d] hover:text-red-400 transition-colors text-sm font-bold w-fit mx-auto md:mx-0 border-b border-transparent hover:border-red-400">Línea FR Antiflama</a>
                 </div>
 
@@ -1040,20 +909,11 @@
 
         // --- SISTEMA DE VISTAS ---
         function mostrarVistaPrincipal() {
-            document.getElementById('view-product').classList.add('hidden');
-            document.getElementById('view-admin').classList.add('hidden');
-            document.getElementById('view-main').classList.remove('hidden');
-            window.scrollTo(0, 0);
+            window.location.href = 'index.html';
         }
 
         function mostrarVistaPrincipalYScroll(seccionId, categoria = null) {
-            mostrarVistaPrincipal();
-            if (categoria) {
-                filtrarCatalogo(categoria);
-            }
-            setTimeout(() => {
-                document.getElementById(seccionId).scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
+            window.location.href = 'index.html#' + seccionId;
         }
 
         function verProductoDetalle(id) {
@@ -1212,7 +1072,7 @@
 
         function cerrarAdmin() {
             document.getElementById('view-admin').classList.add('hidden');
-            mostrarVistaPrincipalYScroll('inicio');
+            window.location.href='index.html';
             renderProductos(productos);
         }
 
@@ -1401,14 +1261,43 @@
         function realizarBusquedaGlobal(query) {
             if(!query || query.trim() === '') return;
             document.getElementById('mobile-menu').classList.add('hidden');
-            window.location.href = 'catalogo.html?q=' + encodeURIComponent(query.trim());
+            
+            const buscadorCatalogo = document.getElementById('buscador');
+            if (buscadorCatalogo) {
+                buscadorCatalogo.value = query;
+                buscarProductos();
+                setTimeout(() => {
+                    buscadorCatalogo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 300);
+            }
         }
 
         window.addEventListener('DOMContentLoaded', () => {
-            renderProductos(productos);
+            const params = new URLSearchParams(window.location.search);
+            const cat = params.get('cat');
+            const q = params.get('q');
+            
+            if (cat) {
+                filtrarCatalogo(cat);
+            } else {
+                filtrarCatalogo('todos');
+            }
+            
+            if (q) {
+                setTimeout(() => {
+                    const buscadorSidebar = document.getElementById('buscador');
+                    if (buscadorSidebar) {
+                        buscadorSidebar.value = q;
+                        buscarProductos();
+                    }
+                }, 100);
+            }
+            
             const btnMenu = document.getElementById('mobile-menu-btn');
             const menuMovil = document.getElementById('mobile-menu');
-            btnMenu.addEventListener('click', () => menuMovil.classList.toggle('hidden'));
+            if (btnMenu && menuMovil) {
+                btnMenu.addEventListener('click', () => menuMovil.classList.toggle('hidden'));
+            }
         });
     </script>
     <!-- Popup de Bienvenida (UPE FR vs Uniformes) -->
